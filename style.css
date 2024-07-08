@@ -1,0 +1,349 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0%);
+    justify-content: space-between;
+}
+
+body {
+    background-image: url("./download.jpeg");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "header header" "section aside";
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize !important;
+    color: white;
+    z-index: 2;
+}
+
+.mario {
+    transform: translate(-350px, 653px);
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.mario a {
+    color: white;
+    text-decoration: none;
+}
+
+.mario a:hover {
+    color: red;
+}
+
+header h1 {
+    font-weight: bolder;
+}
+
+.home-one {
+    transform: translate(0, -120px);
+    margin-bottom: 50px;
+}
+
+.home-three,
+.home-two {
+    margin-bottom: 70px;
+}
+
+.zooma,
+.toto,
+.koko,
+.zozo {
+    color: transparent;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.home:hover {
+    .zooma {
+        color: #000;
+        list-style-type: upper-alpha;
+    }
+}
+
+.zooma li:hover,
+.zozo li:hover,
+.koko a:hover,
+.toto li:hover,
+.y:hover {
+    opacity: 1 !important;
+    font-style: bold;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#f {
+    list-style-type: none;
+    display: inline block;
+    transform: translateY(-410px) translateX(-400px);
+    margin-right: 100px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#f:hover {
+    color: red;
+    text-decoration: underline;
+    font-size: 25px;
+    opacity: 0.7;
+}
+
+.home-one:hover {
+    .toto {
+        color: #000;
+        text-decoration: none;
+        list-style-type: upper-alpha
+    }
+}
+
+.y {
+    color: transparent;
+    text-decoration: none;
+}
+
+.home-two:hover {
+    .zozo {
+        color: #000;
+        list-style-type: circle;
+    }
+}
+
+.home-three:hover {
+    .koko {
+        color: #000;
+        list-style-type: circle;
+    }
+    .y {
+        color: black;
+        text-decoration: none;
+        list-style-type: circle
+    }
+}
+
+section {
+    grid-area: setion;
+    transform: translateX(-800px);
+}
+
+section h2 {
+    font-size: 35px;
+    background-color: rgb(68, 68, 203);
+    padding: 20px;
+}
+
+section p:hover {
+    color: rgb(113, 255, 62);
+}
+
+aside {
+    grid-area: aside;
+    transform: translatex(500px) translateY(200px);
+}
+
+aside h2 {
+    transform: translateY(-270px) translateX(-50px);
+    font-size: 35px;
+    background-color: rgb(68, 68, 203);
+    padding: 20px;
+}
+
+::selection {
+    background-color: black;
+    color: yellow;
+}
+
+::placeholder {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type=email],
+input[type=password] {
+    border: white solid 3px;
+    background-color: transparent;
+    border-radius: 10%;
+    height: 60px;
+    width: 400px;
+    caret-color: white;
+    padding: 20px;
+}
+
+input[type=email] {
+    transform: translateY(-30px);
+}
+
+input[type=submit] {
+    transform: translateY(55px) translateX(150px);
+    background-color: red;
+    border-radius: 40%;
+    height: 40px;
+    width: 80px;
+    color: white;
+    padding: 10px;
+    border: gray 4px solid;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.img-one {
+    transform: translate(100px, -110px);
+}
+
+.img-two {
+    transform: translate(85px, -65px);
+}
+
+.img-three {
+    transform: translate(105px, -40px);
+}
+
+.img-four {
+    transform: translate(105px, -40px);
+}
+
+.photo_four {
+    transform: translate(-80px, 45px);
+}
+
+.check:checked+label {
+    color: rgb(51, 244, 51)
+}
+
+.check:hover+label {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button {
+    color: white;
+    border: none;
+    background-color: transparent;
+    transform: translateX(150px);
+    cursor: pointer;
+    z-index: 3;
+}
+
+button:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+div {
+    color: transparent;
+}
+
+.links li a,
+.links li,
+.links li img {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: transparent;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.links img {
+    opacity: 0;
+}
+
+.my {
+    list-style-type: none;
+    transform: translate(-400px, -340px);
+}
+
+.my-img {
+    margin-right: 15px;
+    transform: translate(0, 9px);
+}
+
+.my:hover {
+    opacity: 1;
+    font-weight: bold;
+    cursor: pointer;
+    .links {
+        transform: translate(0, -70px);
+        background-color: rgb(27, 27, 135);
+        color: white;
+        width: 400px;
+        height: 500px;
+    }
+    .links li a {
+        padding: 20px;
+        border-bottom: black 2px solid;
+        color: red;
+    }
+    .links img {
+        opacity: 1;
+    }
+}
+
+.links li a:hover {
+    font-size: 30px;
+    text-decoration: underline;
+    color: red;
+    background-color: rgb(222, 231, 239);
+    font-weight: bold;
+}
+
+.i img {
+    transform: translate(-210px, 680px);
+}
+
+i {
+    transform: translate(-390px, 690px);
+}
+
+label {
+    color: white;
+}
+
+.gender {
+    transform: translate(0, 20px);
+}
+
+select {
+    padding: 10px;
+    background-color: rgb(165, 165, 254);
+    color: black;
+    font-size: 1.3em;
+    font-weight: 500;
+    cursor: pointer;
+    border: solid 3px white;
+    border-radius: 15px;
+}
+
+select:hover {
+    border-color: black;
+    background-color: rgb(130, 130, 255);
+}
+
+.select {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.main {
+    transform: translate(-750px, -200px);
+}
